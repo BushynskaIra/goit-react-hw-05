@@ -1,0 +1,70 @@
+.container {
+    padding: 20px;
+  }
+  
+  .backButton {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .movieInfo {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .poster {
+    width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .details {
+    max-width: 600px;
+  }
+  
+  .title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .overview {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .subTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .genres {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .genre {
+    margin-right: 10px;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .additionalInfo {
+    margin-top: 20px;
+  }
+  
+  .additionalInfo ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .additionalInfo li {
+    margin-bottom: 10px;
+  }
+  
