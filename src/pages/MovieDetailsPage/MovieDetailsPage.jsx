@@ -11,9 +11,9 @@ function MovieDetailsPage() {
 
   useEffect(() => {
     axios
-      .get(`https://api.themoviedb.org/3/movie/${movieId}`, {
+      .get(`https://api.themoviedb.org/3/trending/movie/day${movieId}`, {
         headers: {
-          Authorization: 'Bearer YOUR_API_KEY',
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNDRjN2Q5YTFmMzRiNzM0ZTU5YmRlZmNjMzI0M2ZlZCIsIm5iZiI6MTcyNDE4NjM3NC4yMjUwNDYsInN1YiI6IjY2YmZiNjJlNTA1MzJkYWIzZDQ4OWNhNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.aLLl57GGpRPEiyBKqKLYLZlz_-CpJxhFrFTLGWaSHmc',
         },
       })
       .then(response => setMovie(response.data))
