@@ -13,7 +13,7 @@ function MoviesPage() {
       .get('https://api.themoviedb.org/3/search/movie', {
         params: { query },
         headers: {
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNDRjN2Q5YTFmMzRiNzM0ZTU5YmRlZmNjMzI0M2ZlZCIsIm5iZiI6MTcyNDE4NjM3NC4yMjUwNDYsInN1YiI6IjY2YmZiNjJlNTA1MzJkYWIzZDQ4OWNhNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.aLLl57GGpRPEiyBKqKLYLZlz_-CpJxhFrFTLGWaSHmc',
+          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZGU0MTYzYzNkMjliODRlN2Y1ZjQ0YTk3ZTMzNDdkZiIsIm5iZiI6MTcyNDI2OTY4My42NTQ3MzEsInN1YiI6IjY2YmZiNjJlNTA1MzJkYWIzZDQ4OWNhNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AGGO737iief1pTSQeXBOm0iuTEymPT9L79puKrHMQ3A',
         },
       })
       .then(response => setMovies(response.data.results))
